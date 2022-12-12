@@ -13,6 +13,7 @@ import pandas as pd
 #### Add header to describe app
 st.header("LinkedIn User App")
 st.image('https://kinsta.com/wp-content/uploads/2018/09/linkedin-statistics.png')
+st.write("Image source: Google")
 st.subheader("Please answer the following questions:")
 
 #Gender
