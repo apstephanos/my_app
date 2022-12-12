@@ -79,7 +79,7 @@ elif income == "100 to under $150,000":
 else:
     income = 9
 
-s = pd.read_csv("/Users/sydneypeirce/Desktop/Python Programming 2 Fall 2022/Final Project/social_media_usage.csv")
+s = pd.read_csv("social_media_usage.csv")
 
 ss = pd.DataFrame({
     "sm_li":np.where(s["sample"] >= 8, np.nan,
