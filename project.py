@@ -18,6 +18,7 @@ st.subheader("Please answer the following questions:")
 
 #Gender
 gender = st.radio('Gender', ['Male', 'Female', 'Other'])
+st.write(f"You selected: {gender}")
 if gender == 'Female':
     gender = 1
 else:
@@ -29,6 +30,7 @@ st.write("Age:", age)
 
 #Marital 
 married = st.radio('Current marital status', ['Married', 'Living with a partner', 'Divorced', 'Seperated', 'Widowed', 'Never been married'])
+st.write(f"You selected: {married}")
 if married == 'Married':
     married = 1
 else:
@@ -36,6 +38,7 @@ else:
 
 #Parent
 parent = st.radio('Are you a parent?', ['Yes', 'No'])
+st.write(f"You selected: {parent}")
 if parent == "Yes":
     parent = 1
 else:
@@ -43,6 +46,7 @@ else:
 
 #Education Level
 education = st.selectbox('What is your current education level?', ['Less than high school', 'High school incomplete', 'High school graduate', 'Some college, no degree', 'Two-year associate degree', 'Four-year college or university degree', 'Some postgraduate or professional schooling'])
+st.write(f"You selected: {education}")
 if education == "Less than high school":
     education = 1
 elif education == "High school incomplete":
@@ -61,6 +65,7 @@ else:
     education = 8
 #Income
 income = st.selectbox('What is your Income?', ['Less than $10,000', '10 to under $20,000', '20 to under $30,000', '30 to under $40,000', '40 to under $50,000', '50 to under $75,000', '75 to under $100,000', '100 to under $150,000', '$150,000 or more'])
+st.write(f"You selected:{income}")
 if income =="Less than $10,000":
     income = 1
 elif income == "10 to under $20,000":
